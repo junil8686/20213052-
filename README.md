@@ -6,6 +6,7 @@ top 명령어 : 시스템의 프로세스/메모리/CPU 사용 현황을 실시�
 - Windows 작업관리자와 유사한 역할
 - <img width="1094" height="265" alt="image" src="https://github.com/user-attachments/assets/22b4da89-46ff-4ea2-a33f-12c36e40f691" />
 
+
 함께 쓰이는 옵션
 top -d 1 ->	1초마다 갱신
 top -u -> 사용자명	특정 사용자 프로세스만 보기
@@ -71,6 +72,30 @@ Z	Zombie
 W	Paging(거의 안 나옴)
 <	높은 우선순위
 N	낮은 우선순위
+
+
+jobs 명령어 : 현재 쉘에서 실행 중인 백그라운드 작업 & 중단된 작업 상황을 출력.
+<img width="568" height="132" alt="image" src="https://github.com/user-attachments/assets/e05e8ef0-1329-4e52-ac28-8fd8cab532a6" />
+
+[1]+  Running    sleep 100 & ->
+[1]	     :         Job 번호
++ / -    :         기본 작업(+) / 차순위 작업(-)
+Running / Stopped	 상태
+sleep 100	         명령어
+
+
+kill 명령어 : 프로세스에 신호(Signal)를 보내서 종료하거나 특정 동작을 수행시키는 명령어
+자주 쓰는 시그널
+15	SIGTERM	정상 종료 요청 (기본)
+9	  SIGKILL	강제 종료 (즉시 죽임)
+2	  SIGINT	Ctrl + C 와 동일
+19	SIGSTOP	일시정지 (Ctrl + Z와 유사)
+18	SIGCONT	정지된 프로세스 재개
+
+프로세스 이름으로 종료 : killall
+killall firefox -> firefox 프로세스 종료
+pkill -f python -> 명령어에 python 포함된 프로세스 종료
+
 
 
 
