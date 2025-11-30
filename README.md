@@ -2,7 +2,7 @@
 .# 과제#2: 리눅스 프로세스 관리 명령어 조사
 학번: 20213052
 이름: 박준일
-top 명령어 : 시스템의 프로세스/메모리/CPU 사용 현황을 실시간으로 모니터링하는 도구
+##top 명령어 : #시스템의 프로세스/메모리/CPU 사용 현황을 실시간으로 모니터링하는 도구
 - Windows 작업관리자와 유사한 역할
 - <img width="1094" height="265" alt="image" src="https://github.com/user-attachments/assets/22b4da89-46ff-4ea2-a33f-12c36e40f691" />
 
